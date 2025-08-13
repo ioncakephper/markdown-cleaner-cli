@@ -24,6 +24,8 @@
 npm install -g markdown-cleaner-cli
 ```
 
+This command installs the CLI tool globally, making the `mdclean` command available in your terminal from any directory.
+
 ---
 
 ## 🧪 Usage
@@ -42,16 +44,16 @@ Clean the Markdown file by removing unnecessary elements.
 
 **Options:**
 
-*   `-f, --force`: overwrite output file if it exists
-*   `-q, --quiet`: suppress all output except errors
+- `-f, --force`: overwrite output file if it exists
+- `-q, --quiet`: suppress all output except errors
 
 ---
 
 ## ⚙️ Global Options
 
-*   `-v, --verbose`: enable verbose output
-*   `--debug`: enable debug output
-*   `--silent`: suppress all output
+- `-v, --verbose`: enable verbose output
+- `--debug`: enable debug output
+- `--silent`: suppress all output
 
 ---
 
