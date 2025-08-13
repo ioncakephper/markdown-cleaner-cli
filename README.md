@@ -26,7 +26,7 @@ npm install -g markdown-cleaner-cli
 
 This command installs the CLI tool globally, making the `mdclean` command available in your terminal from any directory.
 
-To verify mdclean is available, use:
+To verify `mdclean` is available:
 
 ```bash
 mdclean -V
