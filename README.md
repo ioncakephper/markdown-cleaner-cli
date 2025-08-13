@@ -4,8 +4,7 @@
   <img src="assets/branding/logo-light.png" alt="markdown-cleaner-cli logo" width="300"/>
 </p>
 
-**Clean up your Markdown files with a single command.**  
-Remove trailing whitespace, normalize heading levels, fix indentation, and more.
+**A fast, zero-config CLI tool to clean and format Markdown files—remove trailing spaces, normalize headings, and tidy up your docs.**
 
 ---
 
@@ -30,22 +29,29 @@ npm install -g markdown-cleaner-cli
 ## 🧪 Usage
 
 ```bash
-markdown-cleaner path/to/file.md
-```
-
-Or clean an entire folder:
-
-```bash
-markdown-cleaner ./docs
+mdclean clean path/to/file.md
 ```
 
 ---
 
-## 🛠️ Options
+## 🛠️ Commands
 
-```bash
-markdown-cleaner --help
-```
+### `clean <file>`
+
+Clean the Markdown file by removing unnecessary elements.
+
+**Options:**
+
+*   `-f, --force`: overwrite output file if it exists
+*   `-q, --quiet`: suppress all output except errors
+
+---
+
+## ⚙️ Global Options
+
+*   `-v, --verbose`: enable verbose output
+*   `--debug`: enable debug output
+*   `--silent`: suppress all output
 
 ---
 
