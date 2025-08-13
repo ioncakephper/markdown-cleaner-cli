@@ -1,1 +1,21 @@
-const { program } = require('commander');const fs = require('fs');const myPackage = require('../package.json');function createProgram() {  program    .name(Object.keys(myPackage.bin)[0])    .version('0.1.0')    .description('A CLI tool to clean and format Markdown files.')    .configureHelp({ sortOptions: true, sortCommands: true });  program    .command('clean <file>')    .description('Clean the Markdown file by removing unnecessary elements')    .action((file) => {      if (!fs.existsSync(file)) {        console.error(`File not found: ${file}`);        process.exit(1);      }      const content = fs.readFileSync(file, 'utf8');      const cleanedContent = content        .replace(/<!--.*?-->/gs, '') // Remove HTML comments        .replace(/^\s*[\r\n]/gm, '') // Remove empty lines        .replace(/\s{2,}/g, ' ') // Replace multiple spaces with a single space        .trim(); // Trim leading and trailing whitespace          fs.writeFileSync(file, cleanedContent, 'utf8');      console.log(`Cleaned content written to ${file}`);    });  return program;}module.exports = createProgram;
+const { program } = require('commander');const fs = require('fs');const myPackage = require('../package.json');function createProgram() {  program    .name(Object.keys(myPackage.bin)[0])    .version('0.1.0')    .description('A CLI tool to clean and format Markdown files.')    .configureHelp({ sortOptions: true, sortCommands: true });  program    .command('clean <file>')    .description('Clean the Markdown file by removing unnecessary elements')    .action((file) => {      if (!fs.existsSync(file)) {        console.error(`File not found: ${file}`);        process.exit(1);      }      let content = fs.readFileSync(file, 'utf8');
+
+      // 1. Normalize line endings to \n
+      content = content.replace(/\r\n|\r/g, '\n');
+
+      // 2. Trim trailing whitespace on each line
+      content = content.split('\n').map(line => line.trimEnd()).join('\n');
+
+      // 3. Remove extra blank lines (more than one consecutive blank line)
+      content = content.replace(/\n{2,}/g, '\n\n');
+
+      // 4. Convert Setext-style headings to ATX-style headings
+      content = content.replace(/^(.*)\n=+\s*$/gm, (match, p1) => `# ${p1}`);
+      content = content.replace(/^(.*)\n-+\s*$/gm, (match, p1) => `## ${p1}`);
+
+      // Existing cleaning steps
+      content = content
+        .replace(/<!--.*?-->/gs, '') // Remove HTML comments
+        .replace(/^\s*[\r\n]/gm, '') // Remove empty lines
+        .replace(/\s{2,}/g, ' ') // Replace multiple spaces with a single space
+        .trim(); // Trim leading and trailing whitespace          fs.writeFileSync(file, content, 'utf8');      console.log(`Cleaned content written to ${file}`);    });  return program;}module.exports = createProgram;
