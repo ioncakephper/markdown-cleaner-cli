@@ -30,6 +30,14 @@ This command installs the CLI tool globally, making the `mdclean` command availa
 
 ## 🧪 Usage
 
+To check the CLI version:
+
+```bash
+mdclean -V
+```
+
+To clean a Markdown file:
+
 ```bash
 mdclean clean path/to/file.md
 ```
