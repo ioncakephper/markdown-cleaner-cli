@@ -15,6 +15,8 @@ function createProgram() {
   program
     .command('clean <file>')
     .description('Clean the Markdown file by removing unnecessary elements')
+    .option('-f, --force', 'overwrite output file if it exists')
+    .option('-q, --quiet', 'suppress all output except errors')
     .action((file) => {
       if (!fs.existsSync(file)) {
         console.error(`File not found: ${file}`);
