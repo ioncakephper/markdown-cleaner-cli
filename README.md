@@ -55,6 +55,12 @@ Clean the Markdown file by removing unnecessary elements.
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+
+---
+
 ## 📄 License
 
-MIT
+This project is licensed under the [MIT License](LICENSE).
