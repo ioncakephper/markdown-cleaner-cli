@@ -14,6 +14,21 @@
     "type": "git",
     "url": "https://github.com/ioncakephper/markdown-cleaner-cli.git"
   },
+  "keywords": [
+    "markdown",
+    "cli",
+    "cleaner",
+    "formatter",
+    "linter",
+    "optimizer",
+    "tool",
+    "utility",
+    "node",
+    "nodejs",
+    "md",
+    "documentation",
+    "text-processing"
+  ],
   "homepage": "https://github.com/ioncakephper/markdown-cleaner-cli",
   "files": [
     "src/",
