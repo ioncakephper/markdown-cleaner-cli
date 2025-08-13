@@ -1,5 +1,6 @@
 const { program } = require('commander');
 const fs = require('fs');
+const path = require('path');
 const myPackage = require('../package.json');
 const loadCommands = require('./utils/commandLoader');
 
@@ -13,7 +14,8 @@ function createProgram() {
     .option('--debug', 'enable debug output')
     .option('--silent', 'suppress all output');
 
-  loadCommands(program);
+  const commandsDir = path.join(__dirname, '..', 'commands');
+  loadCommands(program, commandsDir);
 
   return program;
 }

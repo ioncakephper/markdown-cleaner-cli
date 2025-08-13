@@ -1,1 +1,22 @@
-const glob = require('glob');const path = require('path');module.exports = (program) => {  let commandsPath = path.join(__dirname, '..', 'commands', '**', '*.js');  commandsPath = commandsPath.replace(/\\/g, '/'); // Replace backslashes with forward slashes  const files = glob.sync(commandsPath);  files.forEach((file) => {    const commandModule = require(file);    if (typeof commandModule === 'function') {      commandModule(program);    }  });};
+const fs = require('fs');
+const path = require('path');
+
+function loadCommands(program, commandsDir) {
+  const files = fs.readdirSync(commandsDir);
+
+  files.forEach((file) => {
+    const fullPath = path.join(commandsDir, file);
+    const stat = fs.statSync(fullPath);
+
+    if (stat.isDirectory()) {
+      loadCommands(program, fullPath); // Recursively load commands from subdirectories
+    } else if (stat.isFile() && file.endsWith('.js')) {
+      const commandModule = require(fullPath);
+      if (typeof commandModule === 'function') {
+        commandModule(program);
+      }
+    }
+  });
+}
+
+module.exports = loadCommands;
