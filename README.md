@@ -1,7 +1,4 @@
-
-
-
-# 🧼 markdown-cleaner-cli
+# 🧼 Markdown Cleaner CLI
 
 <p align="center">
   <img src="assets/branding/logo-light.png" alt="markdown-cleaner-cli logo" width="300"/>
