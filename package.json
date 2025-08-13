@@ -1,6 +1,6 @@
 {
   "name": "markdown-cleaner-cli",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A fast, zero-config CLI tool to clean and format Markdown files.",
   "main": "src/index.js",
   "bin": {
