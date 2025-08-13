@@ -95,7 +95,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
-1. [**Commander.js**](https://commanderjs.com/): For building robust and user-friendly command-line interfaces.
-2. [**Jest**](https://jestjs.io/): For providing a delightful JavaScript testing framework.
-3. [**Glob**](https://github.com/isaacs/node-glob): For flexible file system pattern matching.
-4. [**Git**](https://git-scm.com/): For version control and collaborative development.
+- [**Commander.js**](https://commanderjs.com/): For building robust and user-friendly command-line interfaces.
+- [**Jest**](https://jestjs.io/): For providing a delightful JavaScript testing framework.
+- [**Glob**](https://github.com/isaacs/node-glob): For flexible file system pattern matching.
+- [**Git**](https://git-scm.com/): For version control and collaborative development.
