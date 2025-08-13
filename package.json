@@ -14,6 +14,7 @@
     "type": "git",
     "url": "https://github.com/ioncakephper/markdown-cleaner-cli.git"
   },
+  "homepage": "https://github.com/ioncakephper/markdown-cleaner-cli",
   "author": "ioncakephper",
   "license": "MIT",
   "devDependencies": {
