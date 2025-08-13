@@ -8,7 +8,7 @@ function createProgram() {
   program
     .name(Object.keys(myPackage.bin)[0])
     .version(myPackage.version)
-    .description(myPackage.description)
+    .description(myPackage.description || 'A CLI tool for markdown cleaning')
     .configureHelp({ sortOptions: true, sortCommands: true })
     .option('-v, --verbose', 'enable verbose output')
     .option('--debug', 'enable debug output')
