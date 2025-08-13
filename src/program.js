@@ -14,7 +14,7 @@ function createProgram() {
     .option('--debug', 'enable debug output')
     .option('--silent', 'suppress all output');
 
-  const commandsDir = path.join(__dirname, '..', 'commands');
+  const commandsDir = path.join(__dirname, 'commands');
   loadCommands(program, commandsDir);
 
   return program;
