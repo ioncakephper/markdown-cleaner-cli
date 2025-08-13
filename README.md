@@ -26,6 +26,12 @@ npm install -g markdown-cleaner-cli
 
 This command installs the CLI tool globally, making the `mdclean` command available in your terminal from any directory.
 
+To verify mdclean is available, use:
+
+```bash
+mdclean -V
+```
+
 ---
 
 ## 🧪 Usage
@@ -62,6 +68,14 @@ Clean the Markdown file by removing unnecessary elements.
 - `-v, --verbose`: enable verbose output
 - `--debug`: enable debug output
 - `--silent`: suppress all output
+
+---
+
+## 💬 Community & Support
+
+If you have questions, ideas, or need help, please join our [Discussions](https://github.com/ioncakephper/markdown-cleaner-cli/discussions) page.
+
+For bug reports and feature requests, please open an [issue](https://github.com/ioncakephper/markdown-cleaner-cli/issues).
 
 ---
 
