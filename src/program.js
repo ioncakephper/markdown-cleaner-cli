@@ -1,8 +1,10 @@
 const { program } = require('commander');
 const fs = require('fs');
+const myPackage = require('../package.json');
 
 function createProgram() {
   program
+    .name(Object.keys(myPackage.bin)[0])
     .version('0.1.0')
     .description('A CLI tool to clean and format Markdown files.')
     .argument('<file>', 'file to clean')
