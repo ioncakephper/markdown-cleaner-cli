@@ -1,4 +1,4 @@
-````markdown
+
 <p align="center">
   <img src="assets/branding/logo-light.png" alt="markdown-cleaner-cli logo" width="300"/>
 </p>
