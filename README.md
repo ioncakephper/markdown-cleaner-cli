@@ -88,3 +88,14 @@ Contributions are welcome! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+## 🙏 Acknowledgments
+
+We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
+
+1.  **Commander.js**: For building robust and user-friendly command-line interfaces.
+2.  **Jest**: For providing a delightful JavaScript testing framework.
+3.  **Glob**: For flexible file system pattern matching.
+4.  **Git**: For version control and collaborative development.
