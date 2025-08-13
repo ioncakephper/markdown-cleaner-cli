@@ -1,4 +1,23 @@
-const { program } = require('commander');const fs = require('fs');const myPackage = require('../package.json');function createProgram() {  program    .name(Object.keys(myPackage.bin)[0])    .version('0.1.0')    .description('A CLI tool to clean and format Markdown files.')    .configureHelp({ sortOptions: true, sortCommands: true });  program    .command('clean <file>')    .description('Clean the Markdown file by removing unnecessary elements')    .action((file) => {      if (!fs.existsSync(file)) {        console.error(`File not found: ${file}`);        process.exit(1);      }      let content = fs.readFileSync(file, 'utf8');
+const { program } = require('commander');
+const fs = require('fs');
+const myPackage = require('../package.json');
+
+function createProgram() {
+  program
+    .name(Object.keys(myPackage.bin)[0])
+    .version(myPackage.version)
+    .description('A CLI tool to clean and format Markdown files.')
+    .configureHelp({ sortOptions: true, sortCommands: true });
+
+  program
+    .command('clean <file>')
+    .description('Clean the Markdown file by removing unnecessary elements')
+    .action((file) => {
+      if (!fs.existsSync(file)) {
+        console.error(`File not found: ${file}`);
+        process.exit(1);
+      }
+      let content = fs.readFileSync(file, 'utf8');
 
       // 1. Normalize line endings to \n
       content = content.replace(/\r\n|\r/g, '\n');
@@ -18,4 +37,13 @@ const { program } = require('commander');const fs = require('fs');const myPackag
         .replace(/<!--.*?-->/gs, '') // Remove HTML comments
         .replace(/^\s*[\r\n]/gm, '') // Remove empty lines
         .replace(/\s{2,}/g, ' ') // Replace multiple spaces with a single space
-        .trim(); // Trim leading and trailing whitespace          fs.writeFileSync(file, content, 'utf8');      console.log(`Cleaned content written to ${file}`);    });  return program;}module.exports = createProgram;
+        .trim(); // Trim leading and trailing whitespace          
+      fs.writeFileSync(file, content, 'utf8');
+      console.log(`Cleaned content written to ${file}`);
+    });
+
+
+  return program;
+}
+
+module.exports = createProgram;
