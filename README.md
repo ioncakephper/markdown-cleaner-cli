@@ -30,7 +30,7 @@ This command installs the CLI tool globally, making the `mdclean` command availa
 
 ## 🧪 Usage
 
-To check the CLI version:
+To verify mdclean is available, use:
 
 ```bash
 mdclean -V
