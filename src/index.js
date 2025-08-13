@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 
-function add(a, b) {
-  return a + b;
-}
+const createProgram = require('./program');
 
-module.exports = add;
+const program = createProgram();
+program.parse(process.argv);
