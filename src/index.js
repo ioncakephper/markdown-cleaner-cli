@@ -2,5 +2,9 @@
 
 const createProgram = require('./program');
 
-const program = createProgram();
-program.parse(process.argv);
+function run() {
+  const program = createProgram();
+  program.parse(process.argv);
+}
+
+run();
