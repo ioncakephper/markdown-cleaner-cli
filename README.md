@@ -71,10 +71,10 @@ Clean the Markdown file by removing unnecessary elements.
 
 ---
 
-## 💬 Community & Support
-
 <!-- PROJECT_STRUCTURE_START -->
 <!-- PROJECT_STRUCTURE_END -->
+
+## 💬 Community & Support
 
 If you have questions, ideas, or need help, please join our [Discussions](https://github.com/ioncakephper/markdown-cleaner-cli/discussions) page.
 
