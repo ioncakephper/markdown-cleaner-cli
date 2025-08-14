@@ -4,6 +4,10 @@ const path = require("path");
 const myPackage = require("../package.json");
 const loadCommands = require("./utils/commandLoader");
 
+/**
+ * @description TODO: Add description
+ * @returns {*} TODO: Add description
+ */
 function createProgram() {
   program
     .name(Object.keys(myPackage.bin)[0])
