@@ -73,7 +73,7 @@ Clean the Markdown file by removing unnecessary elements.
 
 ## 🌳 Project Structure
 
-Here is what I have in mind
+[//]: # (You can add your Markdown content here. This comment can be safely removed by deleting this line.)
 
 <!-- PROJECT_STRUCTURE_START -->
 
