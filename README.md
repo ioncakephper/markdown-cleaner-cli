@@ -1,6 +1,14 @@
 # 🧼 Markdown Cleaner CLI
 
-[badges go here]
+[![npm version](https://img.shields.io/npm/v/markdown-cleaner-cli.svg)](https://www.npmjs.com/package/markdown-cleaner-cli)
+[![npm downloads](https://img.shields.io/npm/dm/markdown-cleaner-cli.svg)](https://www.npmjs.com/package/markdown-cleaner-cli)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ioncakephper/markdown-cleaner-cli/docblock-checker.yml?branch=main)](https://github.com/ioncakephper/markdown-cleaner-cli/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ioncakephper/markdown-cleaner-cli/blob/main/LICENSE)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
+[![Test: Jest](https://img.shields.io/badge/tests-jest-99424f.svg)](https://jestjs.io/)
+[![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-active-green.svg)](CODE_OF_CONDUCT.md)
+[![Contributing](https://img.shields.io/badge/contributions-welcome-blue.svg)](CONTRIBUTING.md)
+[![Tests](https://img.shields.io/badge/tests-present-important.svg)]()
 
 A fast, zero-config CLI tool to clean and format Markdown files.
 
@@ -99,6 +107,8 @@ Clean the Markdown file by removing unnecessary elements.
 .
 ├── .vscode
 │   └── launch.json
+├── scripts
+│   └── update-badges.js
 ├── src
 │   ├── commands
 │   │   └── clean.js
@@ -148,6 +158,7 @@ This project is licensed under the [MIT License](LICENSE).
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
 <!-- ACKNOWLEDGMENTS_START -->
+
 - [commander](https://www.npmjs.com/package/commander) - the complete solution for node.js command-line programs
 - [doctoc](https://www.npmjs.com/package/doctoc) - Generates TOC for markdown files of local git repo.
 - [doctrine](https://www.npmjs.com/package/doctrine) - JSDoc parser
