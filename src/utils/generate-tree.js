@@ -66,22 +66,36 @@ function updateReadme() {
   const startIndex = readmeContent.indexOf(startMarker);
   const endIndex = readmeContent.indexOf(endMarker);
 
-  if (startIndex !== -1 && endIndex !== -1) {
-    const before = readmeContent.substring(0, startIndex);
-    const after = readmeContent.substring(endIndex + endMarker.length);
+  const projectTreeOnly = "```\n" + projectTree + "```";
 
-    readmeContent = `${before}${startMarker}\n${projectStructureSection}\n${endMarker}${after}`;
+  if (startIndex !== -1 && endIndex !== -1) {
+    const blockStartIndex = startIndex + startMarker.length;
+    const blockEndIndex = endIndex;
+    const blockContent = readmeContent.substring(
+      blockStartIndex,
+      blockEndIndex,
+    );
+
+    const treeRegex = /```[\s\S]*?```/;
+    const newBlockContent = blockContent.replace(treeRegex, projectTreeOnly);
+
+    const before = readmeContent.substring(0, blockStartIndex);
+    const after = readmeContent.substring(blockEndIndex);
+
+    readmeContent = `${before}${newBlockContent}${after}`;
   } else {
     // Add new section before Community & Support
     const communitySupportHeading = "## 💬 Community & Support";
+    const newSection = `## 🌳 Project Structure\n\n${startMarker}\n${projectTreeOnly}\n${endMarker}`;
+
     if (readmeContent.includes(communitySupportHeading)) {
       readmeContent = readmeContent.replace(
         communitySupportHeading,
-        `${startMarker}\n${projectStructureSection}\n${endMarker}\n\n---\n\n${communitySupportHeading}`,
+        `${newSection}\n\n---\n\n${communitySupportHeading}`,
       );
     } else {
       // If Community & Support not found, append at the end
-      readmeContent += `\n\n---\n\n${startMarker}\n${projectStructureSection}\n${endMarker}`;
+      readmeContent += `\n\n---\n\n${newSection}`;
     }
   }
 
