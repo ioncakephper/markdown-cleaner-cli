@@ -27,10 +27,21 @@ jobs:
         run: npm run format
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "style: format code with prettier"
-          title: "Format code with prettier"
-          body: "Automated code formatting."
-          branch: "prettier-formatting"
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b prettier-formatting
+
+          if ! git diff --exit-code --quiet ;
+          then
+            git add .
+            git commit -m "style: format code with prettier"
+            git push origin prettier-formatting
+
+            gh pr create --title "Format code with prettier" --body "Automated code formatting." --base main --head prettier-formatting
+          else
+            echo "No changes to commit."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
