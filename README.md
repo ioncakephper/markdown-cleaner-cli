@@ -72,7 +72,6 @@ Clean the Markdown file by removing unnecessary elements.
 ---
 
 <!-- PROJECT_STRUCTURE_START -->
-
 ## 🌳 Project Structure
 
 ```
@@ -92,7 +91,6 @@ Clean the Markdown file by removing unnecessary elements.
 ├── tests
 │   └── cli.test.js
 ├── .gitignore
-├── a-new-file.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
 ├── LICENSE
