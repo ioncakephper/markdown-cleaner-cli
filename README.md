@@ -1,6 +1,14 @@
 # 🧼 Markdown Cleaner CLI
 
-[badges go here]
+[![npm version](https://img.shields.io/npm/v/markdown-cleaner-cli.svg)](https://www.npmjs.com/package/markdown-cleaner-cli)
+[![npm downloads](https://img.shields.io/npm/dm/markdown-cleaner-cli.svg)](https://www.npmjs.com/package/markdown-cleaner-cli)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/ioncakephper/markdown-cleaner-cli/docblock-checker.yml?branch=main)](https://github.com/ioncakephper/markdown-cleaner-cli/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ioncakephper/markdown-cleaner-cli/blob/main/LICENSE)
+[![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
+[![Test: Jest](https://img.shields.io/badge/tests-jest-99424f.svg)](https://jestjs.io/)
+[![Code of Conduct](https://img.shields.io/badge/code%20of%20conduct-active-green.svg)](CODE_OF_CONDUCT.md)
+[![Contributing](https://img.shields.io/badge/contributions-welcome-blue.svg)](CONTRIBUTING.md)
+[![Tests](https://img.shields.io/badge/tests-present-important.svg)]()
 
 A fast, zero-config CLI tool to clean and format Markdown files.
 
@@ -11,16 +19,18 @@ A fast, zero-config CLI tool to clean and format Markdown files.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [🚀 Features](#-features)
-- [📦 Installation](#-installation)
-- [🧪 Usage](#-usage)
-- [🛠️ Commands](#-commands)
-  - [`clean <file>`](#clean-file)
-- [⚙️ Global Options](#-global-options)
-- [🌳 Project Structure](#-project-structure)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
+- [🧼 Markdown Cleaner CLI](#-markdown-cleaner-cli)
+  - [Table of Contents](#table-of-contents)
+  - [🚀 Features](#-features)
+  - [📦 Installation](#-installation)
+  - [🧪 Usage](#-usage)
+  - [🛠️ Commands](#️-commands)
+    - [`clean <file>`](#clean-file)
+  - [⚙️ Global Options](#️-global-options)
+  - [🌳 Project Structure](#-project-structure)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
+  - [🙏 Acknowledgments](#-acknowledgments)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
