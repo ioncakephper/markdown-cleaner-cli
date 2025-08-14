@@ -7,9 +7,7 @@ const doctrine = require("doctrine");
 const MODE_REPORT = "report";
 const MODE_GENERATE = "generate";
 
-
 function getParams(func) {
-
   const params = func.params
     .map((param) => {
       if (param.type === "Identifier") {
@@ -26,7 +24,6 @@ function getParams(func) {
   return params;
 }
 
-
 function generateDocblock(params) {
   let docblock = "/**\n";
   docblock += " * @description TODO: Add description\n";
@@ -38,7 +35,6 @@ function generateDocblock(params) {
   docblock += " */";
   return docblock;
 }
-
 
 function processFile(filePath, mode) {
   let content = fs.readFileSync(filePath, "utf-8");
@@ -171,7 +167,6 @@ function run() {
   const files = glob.sync("**/*.{js,ts}", {
     ignore: ["node_modules/**", "tests/**"],
   });
-
 
   files.forEach((file) => {
     const fullPath = path.resolve(file);
