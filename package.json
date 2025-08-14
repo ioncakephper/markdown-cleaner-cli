@@ -45,7 +45,8 @@
     "prettier": "^3.3.2",
     "esprima": "^4.0.1",
     "doctrine": "^3.0.0",
-    "espree": "^10.1.0"
+    "espree": "^10.1.0",
+    "npm-registry-fetch": "^16.0.0"
   },
   "dependencies": {
     "commander": "^14.0.0",
