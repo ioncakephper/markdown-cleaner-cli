@@ -137,7 +137,12 @@ For bug reports and feature requests, please open an [issue](https://github.com/
 
 We welcome contributions of all kinds! Whether you're reporting bugs, requesting features, improving documentation, or submitting pull requests, please first read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-You'll find tips on opening issues, coding standards, running tests, making documentation changes, and more. For documentation edits, remember to run `npm run docs:toc` after updating README headers.
+You'll find tips on opening issues, coding standards, running tests, making documentation changes, and more.
+
+- Use `npm run format` to ensure consistent code and documentation formatting.
+- Use `npm run docs:tree` to update the Project Structure tree in the README.
+- Use `npm run docs:toc` to update the Table of Contents in the README.
+- For convenience, simply run `npm run ready` to execute all three steps in sequence (updating the project tree, updating the table of contents, and formatting) before submitting your changes.
 
 ---
 
@@ -152,6 +157,7 @@ This project is licensed under the [MIT License](LICENSE).
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
 <!-- ACKNOWLEDGMENTS_START -->
+
 - [commander](https://www.npmjs.com/package/commander) - the complete solution for node.js command-line programs
 - [doctoc](https://www.npmjs.com/package/doctoc) - Generates TOC for markdown files of local git repo.
 - [doctrine](https://www.npmjs.com/package/doctrine) - JSDoc parser

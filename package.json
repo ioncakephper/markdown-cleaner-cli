@@ -11,7 +11,8 @@
     "start": "node ./src/index.js",
     "format": "prettier --write \"**/*.{js,md,yml,yaml}\"",
     "docs:tree": "node src/utils/generate-tree.js",
-    "docs:toc": "doctoc README.md"
+    "docs:toc": "doctoc README.md",
+    "ready": "npm run docs:tree && npm run docs:toc && npm run format"
   },
   "repository": {
     "type": "git",
