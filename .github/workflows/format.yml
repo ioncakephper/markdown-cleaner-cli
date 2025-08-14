@@ -31,14 +31,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git checkout -b prettier-formatting
+          git checkout main
+          git pull origin main
+          git checkout -B prettier-formatting
 
           if ! git diff --exit-code --quiet ;
           then
             git add .
             git commit -m "style: format code with prettier"
-            git pull --rebase origin prettier-formatting
-            git push origin prettier-formatting
+            git push --force origin prettier-formatting
 
             gh pr create --title "Format code with prettier" --body "Automated code formatting." --base main --head prettier-formatting
           else
