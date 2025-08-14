@@ -76,7 +76,6 @@ Clean the Markdown file by removing unnecessary elements.
 [//]: # (You can add your Markdown content here. This comment can be safely removed by deleting this line.)
 
 <!-- PROJECT_STRUCTURE_START -->
-
 ```
 .
 ├── .vscode
@@ -101,7 +100,6 @@ Clean the Markdown file by removing unnecessary elements.
 ├── package.json
 └── README.md
 ```
-
 <!-- PROJECT_STRUCTURE_END -->
 
 ---
