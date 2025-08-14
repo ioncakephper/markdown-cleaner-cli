@@ -1,12 +1,33 @@
 # 🧼 Markdown Cleaner CLI
 
-<p align="center">
-  <img src="assets/branding/logo-light.png" alt="markdown-cleaner-cli logo" width="300"/>
-</p>
+[badges go here]
 
-**A fast, zero-config CLI tool to clean and format Markdown files—remove trailing spaces, normalize headings, and tidy up your docs.**
+A fast, zero-config CLI tool to clean and format Markdown files.
 
 ---
+
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Table of Contents](#table-of-contents)
+
+- [🚀 Features](#-features)
+- [📦 Installation](#-installation)
+- [🧪 Usage](#-usage)
+- [🛠️ Commands](#-commands)
+  - [`clean <file>`](#clean-file)
+- [⚙️ Global Options](#-global-options)
+- [🌳 Project Structure](#-project-structure)
+- [💬 Community & Support](#-community--support)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+...
 
 ## 🚀 Features
 
@@ -73,9 +94,10 @@ Clean the Markdown file by removing unnecessary elements.
 
 ## 🌳 Project Structure
 
-[//]: # (You can add your Markdown content here. This comment can be safely removed by deleting this line.)
+[//]: # "You can add your Markdown content here. This comment can be safely removed by deleting this line."
 
 <!-- PROJECT_STRUCTURE_START -->
+
 ```
 .
 ├── .vscode
@@ -100,6 +122,7 @@ Clean the Markdown file by removing unnecessary elements.
 ├── package.json
 └── README.md
 ```
+
 <!-- PROJECT_STRUCTURE_END -->
 
 ---
@@ -114,7 +137,9 @@ For bug reports and feature requests, please open an [issue](https://github.com/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for details.
+We welcome contributions of all kinds! Whether you're reporting bugs, requesting features, improving documentation, or submitting pull requests, please first read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+You'll find tips on opening issues, coding standards, running tests, making documentation changes, and more. For documentation edits, remember to run `npm run docs:toc` after updating README headers.
 
 ---
 
@@ -129,6 +154,7 @@ This project is licensed under the [MIT License](LICENSE).
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
 <!-- ACKNOWLEDGMENTS_START -->
+
 - [commander](https://www.npmjs.com/package/commander) - the complete solution for node.js command-line programs
 - [doctrine](https://www.npmjs.com/package/doctrine) - JSDoc parser
 - [espree](https://www.npmjs.com/package/espree) - An Esprima-compatible JavaScript parser built on Acorn

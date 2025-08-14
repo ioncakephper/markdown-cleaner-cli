@@ -10,7 +10,8 @@
     "test": "jest",
     "start": "node ./src/index.js",
     "format": "prettier --write \"**/*.{js,md,yml,yaml}\"",
-    "docs:tree": "node src/utils/generate-tree.js"
+    "docs:tree": "node src/utils/generate-tree.js",
+    "docs:toc": "doctoc README.md"
   },
   "repository": {
     "type": "git",
@@ -42,12 +43,13 @@
   "author": "ioncakephper",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^30.0.5",
-    "prettier": "^3.3.2",
-    "esprima": "^4.0.1",
+    "doctoc": "^2.2.1",
     "doctrine": "^3.0.0",
     "espree": "^10.1.0",
-    "npm-registry-fetch": "^16.0.0"
+    "esprima": "^4.0.1",
+    "jest": "^30.0.5",
+    "npm-registry-fetch": "^16.0.0",
+    "prettier": "^3.3.2"
   },
   "dependencies": {
     "commander": "^14.0.0",
