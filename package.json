@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest",
     "start": "node ./src/index.js",
-    "format": "prettier --write \"**/*.{js,md,yml,yaml}\""
+    "format": "prettier --write \"**/*.{js,md,yml,yaml}\"",
+    "docs:tree": "node src/utils/generate-tree.js"
   },
   "repository": {
     "type": "git",

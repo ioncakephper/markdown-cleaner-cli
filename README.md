@@ -71,6 +71,39 @@ Clean the Markdown file by removing unnecessary elements.
 
 ---
 
+<!-- PROJECT_STRUCTURE_START -->
+## 🌳 Project Structure
+
+```
+.
+├── .vscode
+│   └── launch.json
+├── src
+│   ├── commands
+│   │   └── clean.js
+│   ├── utils
+│   │   ├── commandLoader.js
+│   │   ├── docblock-checker.js
+│   │   ├── generate-tree.js
+│   │   └── update-readme.js
+│   ├── index.js
+│   └── program.js
+├── tests
+│   └── cli.test.js
+├── .gitignore
+├── a-new-file.md
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── package-lock.json
+├── package.json
+└── README.md
+```
+
+<!-- PROJECT_STRUCTURE_END -->
+
+---
+
 ## 💬 Community & Support
 
 If you have questions, ideas, or need help, please join our [Discussions](https://github.com/ioncakephper/markdown-cleaner-cli/discussions) page.
