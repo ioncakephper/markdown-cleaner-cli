@@ -6,7 +6,6 @@
   "bin": {
     "mdclean": "src/index.js"
   },
-  
   "scripts": {
     "test": "jest",
     "start": "node ./src/index.js",
