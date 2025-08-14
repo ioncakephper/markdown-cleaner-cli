@@ -49,6 +49,26 @@ Thank you for considering contributing to Markdown Cleaner CLI! Contributions ar
 
   This updates the Table of Contents section automatically.
 
+- To keep the formatting of code and Markdown files consistent, run:
+
+  ```bash
+  npm run format
+  ```
+
+- If the project structure in the README needs updating, run:
+
+  ```bash
+  npm run docs:tree
+  ```
+
+- It is vital to run:
+
+  ```bash
+  npm run ready
+  ```
+
+  before submitting a pull request. This command will run all of the above steps (formatting, updating the project tree, and Table of Contents) to ensure your contribution is ready for review.
+
 ## Code of Conduct
 
 By participating, you are expected to uphold our [Code of Conduct](CODE_OF_CONDUCT.md).

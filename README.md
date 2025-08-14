@@ -11,17 +11,18 @@ A fast, zero-config CLI tool to clean and format Markdown files.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [🚀 Features](#-features)
-- [📦 Installation](#-installation)
-- [🧪 Usage](#-usage)
-- [🛠️ Commands](#-commands)
-  - [`clean <file>`](#clean-file)
-- [⚙️ Global Options](#-global-options)
-- [🌳 Project Structure](#-project-structure)
-- [💬 Community & Support](#-community--support)
-- [🤝 Contributing](#-contributing)
-- [📄 License](#-license)
-- [🙏 Acknowledgments](#-acknowledgments)
+- [🧼 Markdown Cleaner CLI](#-markdown-cleaner-cli)
+  - [Table of Contents](#table-of-contents)
+  - [🚀 Features](#-features)
+  - [📦 Installation](#-installation)
+  - [🧪 Usage](#-usage)
+  - [🛠️ Commands](#️-commands)
+    - [`clean <file>`](#clean-file)
+  - [⚙️ Global Options](#️-global-options)
+  - [🌳 Project Structure](#-project-structure)
+  - [🤝 Contributing](#-contributing)
+  - [📄 License](#-license)
+  - [🙏 Acknowledgments](#-acknowledgments)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -122,14 +123,6 @@ Clean the Markdown file by removing unnecessary elements.
 ```
 
 <!-- PROJECT_STRUCTURE_END -->
-
----
-
-## 💬 Community & Support
-
-If you have questions, ideas, or need help, please join our [Discussions](https://github.com/ioncakephper/markdown-cleaner-cli/discussions) page.
-
-For bug reports and feature requests, please open an [issue](https://github.com/ioncakephper/markdown-cleaner-cli/issues).
 
 ---
 
