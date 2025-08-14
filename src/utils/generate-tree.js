@@ -1,6 +1,5 @@
 const fs = require('fs');
 const path = require('path');
-const glob = require('glob');
 
 const README_PATH = path.resolve(__dirname, '../../README.md');
 
