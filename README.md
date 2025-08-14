@@ -95,7 +95,13 @@ This project is licensed under the [MIT License](LICENSE).
 
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
-- [**Commander.js**](https://commanderjs.com/): For building robust and user-friendly command-line interfaces.
-- [**Jest**](https://jestjs.io/): For providing a delightful JavaScript testing framework.
-- [**Glob**](https://github.com/isaacs/node-glob): For flexible file system pattern matching.
-- [**Git**](https://git-scm.com/): For version control and collaborative development.
+<!-- ACKNOWLEDGMENTS_START -->
+- [commander](https://www.npmjs.com/package/commander) - the complete solution for node.js command-line programs
+- [doctrine](https://www.npmjs.com/package/doctrine) - JSDoc parser
+- [espree](https://www.npmjs.com/package/espree) - An Esprima-compatible JavaScript parser built on Acorn
+- [esprima](https://www.npmjs.com/package/esprima) - ECMAScript parsing infrastructure for multipurpose analysis
+- [glob](https://www.npmjs.com/package/glob) - the most correct and second fastest glob implementation in JavaScript
+- [jest](https://www.npmjs.com/package/jest) - Delightful JavaScript Testing.
+- [npm-registry-fetch](https://www.npmjs.com/package/npm-registry-fetch) - Fetch-based http client for use with npm registry APIs
+- [prettier](https://www.npmjs.com/package/prettier) - Prettier is an opinionated code formatter
+<!-- ACKNOWLEDGMENTS_END -->
