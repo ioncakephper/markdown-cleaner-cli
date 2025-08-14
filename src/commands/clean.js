@@ -1,11 +1,22 @@
 const fs = require("fs");
 
+/**
+ * @description TODO: Add description
+ * @param {*} program TODO: Add description
+ * @returns {*} TODO: Add description
+ */
 module.exports = (program) => {
   program
     .command("clean <file>")
     .description("Clean the Markdown file by removing unnecessary elements")
     .option("-f, --force", "overwrite output file if it exists")
     .option("-q, --quiet", "suppress all output except errors")
+      /**
+       * @description TODO: Add description
+       * @param {*} file TODO: Add description
+       * @param {*} options TODO: Add description
+       * @returns {*} TODO: Add description
+       */
     .action((file, options) => {
       if (!fs.existsSync(file)) {
         console.error(`File not found: ${file}`);
@@ -19,6 +30,11 @@ module.exports = (program) => {
       // 2. Trim trailing whitespace on each line
       content = content
         .split("\n")
+      /**
+       * @description TODO: Add description
+       * @param {*} line TODO: Add description
+       * @returns {*} TODO: Add description
+       */
         .map((line) => line.trimEnd())
         .join("\n");
 
@@ -26,7 +42,19 @@ module.exports = (program) => {
       content = content.replace(/\n{2,}/g, "\n\n");
 
       // 4. Convert Setex-style headings to ATX-style headings
+/**
+ * @description TODO: Add description
+ * @param {*} match TODO: Add description
+ * @param {*} p1 TODO: Add description
+ * @returns {*} TODO: Add description
+ */
       content = content.replace(/^(.*)\n=+\s*$/gm, (match, p1) => `# ${p1}`);
+/**
+ * @description TODO: Add description
+ * @param {*} match TODO: Add description
+ * @param {*} p1 TODO: Add description
+ * @returns {*} TODO: Add description
+ */
       content = content.replace(/^(.*)\n-+\s*$/gm, (match, p1) => `## ${p1}`);
 
       // Existing cleaning steps
