@@ -73,6 +73,9 @@ Clean the Markdown file by removing unnecessary elements.
 
 ## 💬 Community & Support
 
+<!-- PROJECT_STRUCTURE_START -->
+<!-- PROJECT_STRUCTURE_END -->
+
 If you have questions, ideas, or need help, please join our [Discussions](https://github.com/ioncakephper/markdown-cleaner-cli/discussions) page.
 
 For bug reports and feature requests, please open an [issue](https://github.com/ioncakephper/markdown-cleaner-cli/issues).
