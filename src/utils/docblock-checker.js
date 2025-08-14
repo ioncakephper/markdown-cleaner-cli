@@ -7,17 +7,9 @@ const doctrine = require("doctrine");
 const MODE_REPORT = "report";
 const MODE_GENERATE = "generate";
 
-/**
- * @description TODO: Add description
- * @param {*} func TODO: Add description
- * @returns {*} TODO: Add description
- */
+
 function getParams(func) {
-  /**
-   * @description TODO: Add description
-   * @param {*} param TODO: Add description
-   * @returns {*} TODO: Add description
-   */
+
   const params = func.params
     .map((param) => {
       if (param.type === "Identifier") {
@@ -34,19 +26,11 @@ function getParams(func) {
   return params;
 }
 
-/**
- * @description TODO: Add description
- * @param {*} params TODO: Add description
- * @returns {*} TODO: Add description
- */
+
 function generateDocblock(params) {
   let docblock = "/**\n";
   docblock += " * @description TODO: Add description\n";
-  /**
-   * @description TODO: Add description
-   * @param {*} param TODO: Add description
-   * @returns {*} TODO: Add description
-   */
+
   params.forEach((param) => {
     docblock += ` * @param {*} ${param} TODO: Add description\n`;
   });
@@ -55,12 +39,7 @@ function generateDocblock(params) {
   return docblock;
 }
 
-/**
- * @description TODO: Add description
- * @param {*} filePath TODO: Add description
- * @param {*} mode TODO: Add description
- * @returns {*} TODO: Add description
- */
+
 function processFile(filePath, mode) {
   let content = fs.readFileSync(filePath, "utf-8");
   if (content.startsWith("#!/usr/bin/env node")) {
@@ -178,17 +157,9 @@ function processFile(filePath, mode) {
   }
 }
 
-/**
- * @description TODO: Add description
- * @returns {*} TODO: Add description
- */
 function run() {
   const args = process.argv.slice(2);
-  /**
-   * @description TODO: Add description
-   * @param {*} arg TODO: Add description
-   * @returns {*} TODO: Add description
-   */
+
   const modeArg = args.find((arg) => arg.startsWith("--mode="));
   const mode = modeArg ? modeArg.split("=")[1] : MODE_REPORT;
 
@@ -201,11 +172,7 @@ function run() {
     ignore: ["node_modules/**", "tests/**"],
   });
 
-  /**
-   * @description TODO: Add description
-   * @param {*} file TODO: Add description
-   * @returns {*} TODO: Add description
-   */
+
   files.forEach((file) => {
     const fullPath = path.resolve(file);
     processFile(fullPath, mode);
