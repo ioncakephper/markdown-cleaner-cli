@@ -37,6 +37,7 @@ jobs:
           then
             git add .
             git commit -m "style: format code with prettier"
+            git pull --rebase origin prettier-formatting
             git push origin prettier-formatting
 
             gh pr create --title "Format code with prettier" --body "Automated code formatting." --base main --head prettier-formatting
