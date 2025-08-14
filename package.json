@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "node ./src/index.js"
+    "start": "node ./src/index.js",
+    "format": "prettier --write \"**/*.{js,md}\""
   },
   "repository": {
     "type": "git",
@@ -40,7 +41,8 @@
   "author": "ioncakephper",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^30.0.5"
+    "jest": "^30.0.5",
+    "prettier": "^3.3.2"
   },
   "dependencies": {
     "commander": "^14.0.0",

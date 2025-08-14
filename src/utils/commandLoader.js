@@ -1,5 +1,5 @@
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 function loadCommands(program, commandsDir) {
   const files = fs.readdirSync(commandsDir);
@@ -10,9 +10,9 @@ function loadCommands(program, commandsDir) {
 
     if (stat.isDirectory()) {
       loadCommands(program, fullPath); // Recursively load commands from subdirectories
-    } else if (stat.isFile() && file.endsWith('.js')) {
+    } else if (stat.isFile() && file.endsWith(".js")) {
       const commandModule = require(fullPath);
-      if (typeof commandModule === 'function') {
+      if (typeof commandModule === "function") {
         commandModule(program);
       }
     }

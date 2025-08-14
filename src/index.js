@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const createProgram = require('./program');
+const createProgram = require("./program");
 
 function run() {
   try {
@@ -10,6 +10,5 @@ function run() {
     console.error(e);
   }
 }
-
 
 run();
