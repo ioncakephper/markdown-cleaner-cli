@@ -12,7 +12,7 @@
     "format": "prettier --write \"**/*.{js,md,yml,yaml}\"",
     "docs:tree": "node src/utils/generate-tree.js",
     "docs:toc": "doctoc --notitle README.md",
-    "ready": "npm run docs:tree && npm run docs:toc && npm run format",
+    "ready": "npm run badges:update && npm run docs:tree && npm run docs:toc && npm run format",
     "badges:update": "node scripts/update-badges.js"
   },
   "repository": {

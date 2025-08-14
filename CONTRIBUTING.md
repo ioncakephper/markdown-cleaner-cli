@@ -49,6 +49,14 @@ Thank you for considering contributing to Markdown Cleaner CLI! Contributions ar
 
   This updates the Table of Contents section automatically.
 
+- To keep the repository's badges accurate and up to date, run:
+
+  ```bash
+  npm run badges:update
+  ```
+
+  This will refresh the badges at the top of `README.md` to match repository features (npm, license, CI, and more).
+
 - To keep the formatting of code and Markdown files consistent, run:
 
   ```bash
@@ -67,7 +75,7 @@ Thank you for considering contributing to Markdown Cleaner CLI! Contributions ar
   npm run ready
   ```
 
-  before submitting a pull request. This command will run all of the above steps (formatting, updating the project tree, and Table of Contents) to ensure your contribution is ready for review.
+  before submitting a pull request. This command will run all of the above steps: refresh the badges, update the project tree, update the Table of Contents, and format code and Markdown files—ensuring your contribution is ready for review.
 
 ## Code of Conduct
 
