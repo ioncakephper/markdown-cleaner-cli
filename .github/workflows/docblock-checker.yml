@@ -2,31 +2,31 @@ name: Docblock Checker
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
     inputs:
       run_mode:
         description: 'Run mode: "generate" to add docblocks, "report" to list missing ones.'
         required: true
-        default: 'report'
+        default: "report"
 
 jobs:
   docblock-checker:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run Docblock Checker
-      run: node src/utils/docblock-checker.js --mode=${{ github.event.inputs.run_mode || 'report' }}
+      - name: Run Docblock Checker
+        run: node src/utils/docblock-checker.js --mode=${{ github.event.inputs.run_mode || 'report' }}
