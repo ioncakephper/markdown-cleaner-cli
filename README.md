@@ -96,6 +96,7 @@ This project is licensed under the [MIT License](LICENSE).
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
 <!-- ACKNOWLEDGMENTS_START -->
+
 - [commander](https://www.npmjs.com/package/commander) - the complete solution for node.js command-line programs
 - [doctrine](https://www.npmjs.com/package/doctrine) - JSDoc parser
 - [espree](https://www.npmjs.com/package/espree) - An Esprima-compatible JavaScript parser built on Acorn
