@@ -86,7 +86,13 @@ function updateReadme() {
   } else {
     // Add new section before Community & Support
     const communitySupportHeading = "## 💬 Community & Support";
-    const newSection = `## 🌳 Project Structure\n\n${startMarker}\n${projectTreeOnly}\n${endMarker}`;
+    const newSection = `## 🌳 Project Structure
+
+[//]: # (You can add your Markdown content here. This comment can be safely removed by deleting this line.)
+
+${startMarker}
+${projectTreeOnly}
+${endMarker}`;
 
     if (readmeContent.includes(communitySupportHeading)) {
       readmeContent = readmeContent.replace(
