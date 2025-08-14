@@ -11,18 +11,16 @@ A fast, zero-config CLI tool to clean and format Markdown files.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [🧼 Markdown Cleaner CLI](#-markdown-cleaner-cli)
-  - [Table of Contents](#table-of-contents)
-  - [🚀 Features](#-features)
-  - [📦 Installation](#-installation)
-  - [🧪 Usage](#-usage)
-  - [🛠️ Commands](#️-commands)
-    - [`clean <file>`](#clean-file)
-  - [⚙️ Global Options](#️-global-options)
-  - [🌳 Project Structure](#-project-structure)
-  - [🤝 Contributing](#-contributing)
-  - [📄 License](#-license)
-  - [🙏 Acknowledgments](#-acknowledgments)
+- [🚀 Features](#-features)
+- [📦 Installation](#-installation)
+- [🧪 Usage](#-usage)
+- [🛠️ Commands](#-commands)
+  - [`clean <file>`](#clean-file)
+- [⚙️ Global Options](#-global-options)
+- [🌳 Project Structure](#-project-structure)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
+- [🙏 Acknowledgments](#-acknowledgments)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -150,6 +148,7 @@ This project is licensed under the [MIT License](LICENSE).
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
 <!-- ACKNOWLEDGMENTS_START -->
+
 - [commander](https://www.npmjs.com/package/commander) - the complete solution for node.js command-line programs
 - [doctoc](https://www.npmjs.com/package/doctoc) - Generates TOC for markdown files of local git repo.
 - [doctrine](https://www.npmjs.com/package/doctrine) - JSDoc parser
