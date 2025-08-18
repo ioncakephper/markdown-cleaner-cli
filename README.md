@@ -158,7 +158,6 @@ This project is licensed under the [MIT License](LICENSE).
 We would like to thank the creators and maintainers of the following libraries and tools, which were instrumental in the development of this CLI and the management of its repository:
 
 <!-- ACKNOWLEDGMENTS_START -->
-
 - [commander](https://www.npmjs.com/package/commander) - the complete solution for node.js command-line programs
 - [doctoc](https://www.npmjs.com/package/doctoc) - Generates TOC for markdown files of local git repo.
 - [doctrine](https://www.npmjs.com/package/doctrine) - JSDoc parser
