@@ -29,12 +29,6 @@ function getParams(func) {
   return params;
 }
 
-
-
-
-
-
-
 function generateDocblock(params) {
   let docblock = "/**\n";
   docblock += " * @description TODO: Add description\n";
