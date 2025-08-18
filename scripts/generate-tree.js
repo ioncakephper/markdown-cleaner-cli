@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const README_PATH = path.resolve(__dirname, "../../README.md");
+const README_PATH = path.resolve(__dirname, "../README.md");
 
 function generateTree(dir, indent = "", isLast = false, exclude = []) {
   let tree = "";

@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Generate and Update Project Structure
-        run: node src/utils/generate-tree.js
+        run: node scripts/generate-tree.js
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4

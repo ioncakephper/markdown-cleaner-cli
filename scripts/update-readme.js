@@ -2,8 +2,8 @@ const fs = require("fs");
 const path = require("path");
 const npa = require("npm-package-arg");
 const fetch = require("npm-registry-fetch");
-const README_PATH = path.resolve(__dirname, "../../README.md");
-const PACKAGE_JSON_PATH = path.resolve(__dirname, "../../package.json");
+const README_PATH = path.resolve(__dirname, "../README.md");
+const PACKAGE_JSON_PATH = path.resolve(__dirname, "../package.json");
 async function getAcknowledgments() {
   const packageJson = JSON.parse(fs.readFileSync(PACKAGE_JSON_PATH, "utf-8"));
   const dependencies = Object.keys(packageJson.dependencies || {});
