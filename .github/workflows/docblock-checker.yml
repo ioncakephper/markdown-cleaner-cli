@@ -10,7 +10,7 @@ on:
       run_mode:
         description: 'Run mode: "generate" to add docblocks, "report" to list missing ones.'
         required: true
-        default: "report"
+        default: "generate"
 
 jobs:
   docblock-checker:
