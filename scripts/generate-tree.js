@@ -51,7 +51,7 @@ function updateReadme() {
 
   let projectTree = ".\n"; // Add root directory
   projectTree += generateTree(
-    path.resolve(__dirname, "../../"),
+    path.resolve(__dirname, "../"),
     "",
     false,
     exclude,
