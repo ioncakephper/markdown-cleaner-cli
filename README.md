@@ -105,29 +105,30 @@ Clean the Markdown file by removing unnecessary elements.
 
 ```
 .
-├── .vscode
-│   └── launch.json
-├── scripts
-│   └── update-badges.js
-├── src
-│   ├── commands
-│   │   └── clean.js
-│   ├── utils
-│   │   ├── commandLoader.js
-│   │   ├── docblock-checker.js
-│   │   ├── generate-tree.js
-│   │   └── update-readme.js
-│   ├── index.js
-│   └── program.js
-├── tests
-│   └── cli.test.js
-├── .gitignore
-├── CODE_OF_CONDUCT.md
-├── CONTRIBUTING.md
-├── LICENSE
-├── package-lock.json
-├── package.json
-└── README.md
+└── markdown-cleaner-cli
+│   ├── .vscode
+│       └── launch.json
+│   ├── scripts
+│       ├── docblock-checker.js
+│       ├── generate-tree.js
+│       ├── update-badges.js
+│       └── update-readme.js
+│   ├── src
+│       ├── commands
+│       │   └── clean.js
+│       ├── utils
+│       │   └── commandLoader.js
+│       ├── index.js
+│       └── program.js
+│   ├── tests
+│       └── cli.test.js
+│   ├── .gitignore
+│   ├── CODE_OF_CONDUCT.md
+│   ├── CONTRIBUTING.md
+│   ├── LICENSE
+│   ├── package-lock.json
+│   ├── package.json
+│   └── README.md
 ```
 
 <!-- PROJECT_STRUCTURE_END -->
