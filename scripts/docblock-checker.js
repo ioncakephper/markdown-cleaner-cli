@@ -8,9 +8,9 @@ const MODE_REPORT = "report";
 const MODE_GENERATE = "generate";
 
 /**
- * 
- * @param {Object} func - The function AST node
- * @returns array of parameter names
+ * Extracts parameter names from a function's AST node.
+ * @param {Object} func - The function AST node.
+ * @returns {string[]} An array of parameter names.
  */
 function getParams(func) {
   const params = func.params
