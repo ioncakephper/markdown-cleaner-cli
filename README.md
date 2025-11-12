@@ -12,6 +12,8 @@
 
 A fast, zero-config CLI tool to clean and format Markdown files.
 
+<img src="assets/branding/MARKDOWN.png" alt="Repository Banner"></img>
+
 ---
 
 ## Table of Contents
